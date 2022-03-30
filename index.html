@@ -11,16 +11,46 @@
 </head>
 
 <body>
-    
+    <div class="snowflakes" aria-hidden="true">
+        
+        <div class="snowflake">
+        ❅
+        </div>    
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+      </div>
     <section>
         <audio id="start" src="sounds/start.mp3" muted></audio>
-        <img src="imgs/456.png" class="stars" alt="">
+        <img src="imgs/hello2.png" class="stars" alt="">
         
         <h2 class="text">Frozen Brick</h2>
         <img src="imgs/baaa.png" class="back" alt="">
         <a  href="#se" class="btnn">Explore</a>
-        
-
         <img src="imgs/frr.png" class="front" alt="">
 
     </section>
@@ -37,27 +67,20 @@
         You know how much Elsa loves her younger sister Anna but she is unable to meet her due to these icy blocks in her way. Help Elsa defeat them and connect her with Anna.</p>
         
           </p>
-
-        
-        
         <ul id="para">
             <h1>INSTRUCTIONS:</h1>
             <li> Tap on 'Play Game' to start</li>
             <li>Destroy all the frozen blocks without letting the snowball bounce past the paddle.</li>
             <li>Watch the snowball closely as it rebounds off the snowy bricks.</li>
             <li>Move the paddle horizontally to save the snowball from striking the bottom.</li>
-            <li> Every time you hit the bottom, your energy to create ice will be decreased by one. You will have a total of three lives. </li>
+            <li> Every time you hit the bottom, your energy to create ice will be decreased by one. You will have a total of two lives. </li>
             <li>As you progress through the levels, your total lives per level increases by one.</li>
-            <li>POWER-UP:</li>
-            <li>Yellow blocks will decrease the speed of snowball.</li>
-            <li>POWER-DOWN:</li>
-            <li>  Beware of the red ones! They will increase the speed of the snowball.</li>
-            <li>Good luck, Have Fun and help Elsa reach Anna!</li>
-         
-
+            <h3>POWER-UP:</h3>
+            <li>Ice blocks will decrease the speed of snowball or decrease width of paddle.</li>
+            <h3>POWER-DOWN:</h3>
+            <li>  Beware of the fire ones! They will increase the speed of the snowball or increase the width of paddle.</li>
             </ul>
-           
-          </ul>
+          <h3 style="color:white;font-size:2rem"> Good luck, Have Fun and help Elsa reach Anna!</h3>
           <a href="game.html">
             <span></span>
             <span></span>
@@ -65,41 +88,9 @@
             <span></span>
             Play Game
           </a>
-        
-   
 </div>
-<script>
-
- var startSound = document.querySelector('#start');
- var stars=document.querySelector('.stars');
- var mountains=document.querySelector('.back');
- var text=document.querySelector('.text');
- var mountainsb=document.querySelector('.front');;
-
-
-startSound.currentTime = 0;
-startSound.play();
-startSound.muted = false;
- window.addEventListener('scroll',function(){
-     var value= window.scrollY;
-     console.log(value);
-
-     stars.style.left= value * 0.25 + 'px' ;
-    //  moon.style.top=value * 1.25 + 'px';
-     mountains.style.top=  value * 0.5 + 'px';
-     mountainsb.style.top= value * 0 + 'px';
-     text.style.marginRight= value * 4 +'px';
-
-
-     //adding button
-     
-
-
-    
-
- });
-
-</script>
+<footer style=" text-align: center ;font-size: 1.5rem">Made with ❤️ by Kalash, Prakhar, Sachin, Soumy, UmangG, UmangS and Vandana (8bit-Coders)</footer>
+<script src="js.js"></script>
 </body>
 </html>
 
